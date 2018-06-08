@@ -102,7 +102,7 @@ class m_streams extends Module
 
 	public function install()
 	{
-		$this->config('streams_per_row', '4', INT);
+		$this->config('streams_per_row', '4');
 
 		$this->db	->execute('CREATE TABLE `nf_streams` (
 						`stream_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
